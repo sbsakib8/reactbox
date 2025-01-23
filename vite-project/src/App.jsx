@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-import Sliders from './box/slider/Slider'
+import './App.css'
+import Useeffect from './compnent/Useeffect'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
-    <>
-    <Sliders/>
-    </>
+    <div>
+   <h2>hello</h2>
+   <Useeffect/>
+    </div>
   )
 }
 

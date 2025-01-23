@@ -30,7 +30,7 @@ const data=[
 
 ]
 function Sliders() {
-    var settings = {
+    let settings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -39,11 +39,12 @@ function Sliders() {
       };
   return (
     <>
-    <Slider {...settings} >
-     <div className=' flex justify-center items-center gap-6 mt-8 w-[1000px] h-[600px]'>
-     
+   
+     <div className=' flex justify-center items-center gap-6 mt-8'>
+     <Slider {...settings}>
         {
-         data.map((item,input)=>{
+         data.map((item,input)=>(
+           
             <div key={input} className=' bg-green-500 w-[250px] flex flex-col  justify-center items-center py-6'>
          <div className=' bg-black w-[200px] h-[150px]'></div>
          <div>
@@ -51,14 +52,15 @@ function Sliders() {
              <p>{item.work}</p>
          </div>
      </div>
-          })
+         ))
+        
        }
-      
+       </Slider>
        <h1>sb sakib</h1>
      </div>
-     </Slider>
+    
     </>
   )
 }
 
-export default Sliders
+export default Sliders;
