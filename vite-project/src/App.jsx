@@ -1,13 +1,11 @@
-
 import './App.css'
-import Useeffect from './compnent/Useeffect'
-
+import Component from './compnent/Component'
 function App() {
  
   return (
     <div>
    <h2>hello</h2>
-   <Useeffect/>
+  <Component/>
     </div>
   )
 }
