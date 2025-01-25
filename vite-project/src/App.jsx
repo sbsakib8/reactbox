@@ -1,11 +1,11 @@
 import './App.css'
-import Component from './compnent/Component'
+import Datafatch from './compnent/customhook/Datafatch'
+
 function App() {
  
   return (
     <div>
-   <h2>hello</h2>
-  <Component/>
+   <Datafatch/>
     </div>
   )
 }
