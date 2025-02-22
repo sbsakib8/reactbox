@@ -1,7 +1,7 @@
 import React from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import { decrement, increment } from '../Redux/countSlice'
-
+import { ToastContainer, toast } from 'react-toastify';
 function Component1() {
   const count = useSelector((select)=> select.counter.value)
   const dispatch = useDispatch()
@@ -12,6 +12,7 @@ function Component1() {
       onClick={
         ()=>{
           dispatch(increment())
+          toast.success('Incremented Successfully', )
         }
       }
       >increment</button>
@@ -19,6 +20,7 @@ function Component1() {
       onClick={
         ()=>{
           dispatch(decrement())
+          toast.error('Decremented Successfully', )
         }
       }
       >decrement</button>
